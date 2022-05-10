@@ -32,7 +32,7 @@ function Stripe() {
     }, 1000);
   });
 
-  let cost;
+  let cost = 0;
 
   if (cart.quantity >= 10 && cart.quantity < 20) {
     cost = cart.price * cart.quantity * 0.95;
@@ -60,6 +60,7 @@ function Stripe() {
     );
   }
 
+  console.log(cart)
   //4242 4242 4242 4242
 
   return (
